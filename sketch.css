@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.header {
+  margin-top: 50px;
+  margin-right: 36px;
+  text-align: center;
+  font-family: sans-serif;
+  color: blue;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.etch-grid {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  margin: 20px auto  0 auto ;
+  box-shadow: 1px 1px 2px 3px rgb(0 0 0 / 20%);
+  display: grid;
+}
+
+.sketch-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user-options {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.clear-button, .erase-button {
+  cursor: pointer;
+  width: 120px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: blue;
+  background-color: transparent;
+  border: 3px solid white;
+  padding: 10px 20px;
+  border-radius: 1rem;
+}
+
+#color-picker {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+input[type="color"]::-moz-color-swatch {
+  border: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border-radius: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+.slider-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#pixel-counter {
+  font-family: sans-serif;
+  color: blue;
+}
+
+.pixel-slider {
+  appearance: none;
+  width: 240px;
+  height: 8px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, blue 50%, white 50%);
+}
+
+.pixel-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.pixel-slider::-ms-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: blue;
+  cursor: pointer;  
+}
+
+.pixel-slider::-moz-range-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: blue;
+  cursor: pointer;  
+}
